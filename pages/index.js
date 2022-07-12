@@ -30,6 +30,7 @@ export default function Home() {
       <Head>
         <title>hakan.software</title>
         <meta name="description" content="hi! i am hakan." />
+        <meta property="og:image" content="/logo512.png"/>
       </Head>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={5}>
