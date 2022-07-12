@@ -29,6 +29,7 @@ export default function Home() {
     <Container>
       <Head>
         <title>hakan.software</title>
+        <meta name="description" content="hi! i am hakan." />
       </Head>
       <Grid container spacing={4}>
         <Grid item xs={12} sm={5}>
