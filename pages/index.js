@@ -47,7 +47,7 @@ export default function Home() {
       <Grid container spacing={4}>
         <Grid item xs={12} sm={5}>
           <Item>
-            <Avatar src={HakanCandarImage.src} sx={{ width: "75%", height: "75%", mx: "auto", mb: 2 }} />
+            <Avatar src={HakanCandarImage.src} sx={{ width: "75%", height: "auto", mx: "auto", mb: 2, aspectRatio: "1 / 1" }} />
             <Typography variant="h5" sx={{mb: 1}}>hakan candar</Typography>
             <Typography>i am a technical high school graduate who loves programming.</Typography>
             {

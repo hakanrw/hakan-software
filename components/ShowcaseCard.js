@@ -35,7 +35,7 @@ export default function ShowcaseCard({ title, text, sx, image, big = false, href
           <CardMedia
             component="img"
             image={image}
-            sx={{height: "100%", backgroundColor: 'background.default'}}
+            sx={{height: "100%", backgroundColor: 'background.default', aspectRatio: big ? "1 / 1" : undefined}}
             />
         </Grid>
       </Grid>
