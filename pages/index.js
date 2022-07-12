@@ -15,6 +15,12 @@ import SkillsImage from "../assets/skills.jpeg";
 import StackImage from "../assets/stack.jpeg";
 import { Fragment } from 'react';
 
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import MailIcon from '@mui/icons-material/Mail';
+
+import { css } from '@emotion/css';
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === '#1A2027',
   ...theme.typography.body2,
@@ -25,6 +31,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 
 export default function Home() {
+  const social = [
+    ["github", "https://github.com/hcandar", GitHubIcon],
+    ["linkedin", "https://www.linkedin.com/in/ahmet-hakan-candar-4290821a3/", LinkedInIcon],
+    ["e-mail", "mailto:hakancandar@protonmail.com", MailIcon],
+  ];
+
   return (
     <Container>
       <Head>
@@ -38,6 +50,26 @@ export default function Home() {
             <Avatar src={HakanCandarImage.src} sx={{ width: "75%", height: "75%", mx: "auto", mb: 2 }} />
             <Typography variant="h5" sx={{mb: 1}}>hakan candar</Typography>
             <Typography>i am a technical high school graduate who loves programming.</Typography>
+            {
+              social.map(s => {
+                const Icon = s[2];
+                return (
+                  <a key={s[0]} href={s[1]} style={{textDecoration: "none", color: "white", fontWeight: 600}}>
+                    <div 
+                    className={css`
+                      display: flex;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      margin-top: 15px;
+                      justify-content: center;
+                      `} 
+                    >
+                      <Icon fontSize="medium"/><span className={css`margin-left: 4px; font-size: 110%`}> {s[0]}</span>
+                  </div>
+                  </a>
+                );
+              })
+            }
           </Item>
         </Grid>
         <Grid item xs={12} sm={7}>
