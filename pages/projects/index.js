@@ -26,7 +26,7 @@ export default function Projects() {
           </Fragment>
         } 
         image={FlintImage.src}
-        href="https://flint-app.netlify.app"
+        href="https://flint-social.netlify.app"
         big
       />
       <ShowcaseCard {...style}
