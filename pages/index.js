@@ -49,7 +49,7 @@ export default function Home() {
           <Item>
             <Avatar src={HakanCandarImage.src} sx={{ width: "75%", height: "auto", mx: "auto", mb: 2, aspectRatio: "1 / 1" }} />
             <Typography variant="h5" sx={{mb: 1}}>hakan candar</Typography>
-            <Typography>i am a computer science student ar yeditepe uni who loves programming.</Typography>
+            <Typography>i am a computer science student at yeditepe uni who loves programming.</Typography>
             {
               social.map(s => {
                 const Icon = s[2];
