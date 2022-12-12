@@ -32,15 +32,15 @@ const Item = styled(Paper)(({ theme }) => ({
 
 export default function Home() {
   const social = [
-    ["github", "https://github.com/hcandar", GitHubIcon],
-    ["linkedin", "https://www.linkedin.com/in/ahmet-hakan-candar-4290821a3/", LinkedInIcon],
+    ["github", "https://github.com/hakanrw", GitHubIcon],
+    ["linkedin", "https://www.linkedin.com/in/hakan-candar/", LinkedInIcon],
     ["e-mail", "mailto:hakancandar@protonmail.com", MailIcon],
   ];
 
   return (
     <Container>
       <Head>
-        <title>hakan.software</title>
+        <title>hakan.candar.dev</title>
         <meta name="description" content="hi! i am hakan." />
         <meta property="og:image" content="/logo512.png"/>
       </Head>
@@ -49,7 +49,7 @@ export default function Home() {
           <Item>
             <Avatar src={HakanCandarImage.src} sx={{ width: "75%", height: "auto", mx: "auto", mb: 2, aspectRatio: "1 / 1" }} />
             <Typography variant="h5" sx={{mb: 1}}>hakan candar</Typography>
-            <Typography>i am a technical high school graduate who loves programming.</Typography>
+            <Typography>i am a computer science student ar yeditepe uni who loves programming.</Typography>
             {
               social.map(s => {
                 const Icon = s[2];
