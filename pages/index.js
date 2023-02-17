@@ -9,7 +9,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 
 import ShowcaseCard from '../components/ShowcaseCard';
-import HakanCandarImage from "../assets/hakan-candar.jpeg";
+import HakanCandarImage from "../assets/hakan.jpg";
 import EnkaSchoolsImage from "../assets/enka-okullari.jpeg";
 import SkillsImage from "../assets/skills.jpeg";
 import StackImage from "../assets/stack.jpeg";
