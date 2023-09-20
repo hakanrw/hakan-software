@@ -22,7 +22,7 @@ export default function Projects() {
         text={
           <Fragment>
             social platforming application built with supabase and react. <br/> 
-            you can follow people, like posts, and comment on people's content.
+            you can follow people, like posts, and comment on people's content. <br/>
             explore the world and the people within.
           </Fragment>
         } 
