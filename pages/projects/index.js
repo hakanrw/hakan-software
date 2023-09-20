@@ -3,9 +3,9 @@ import { Fragment } from "react";
 import PageContainer from "../../components/PageContainer";
 import ShowcaseCard from "../../components/ShowcaseCard";
 
-import AcisozlukImage from "../../assets/projects/aci-sozluk.png";
+import FlamingoImage from "../../assets/projects/flamingo.png";
 import FlintImage from "../../assets/projects/flint.png";
-import ShortenxpressImage from "../../assets/projects/shortenxpress.png";
+import QrbookImage from "../../assets/projects/qrbook.png";
 
 import Head from 'next/head';
 
@@ -22,36 +22,38 @@ export default function Projects() {
         text={
           <Fragment>
             social platforming application built with supabase and react. <br/> 
+            you can follow people, like posts, and comment on people's content.
             explore the world and the people within.
           </Fragment>
         } 
         image={FlintImage.src}
-        href="https://flint-social.netlify.app"
+        href="https://flint.candar.dev"
         big
       />
       <ShowcaseCard {...style}
-        title="acı sözlük" 
+        title="flamingo" 
         text={
           <Fragment>
-            social dictionary application inspired from turkish website ekşi sözlük.
-            built with react, mongo and express. <br/>
-            write to your heart's content.
+            thought expression platform that makes extensive use of tags.  <br/>
+            you can add multiple tags to a flame (post) and filter flames by category. <br/>
+            built with svelte and firebase.
           </Fragment>
         } 
-        image={AcisozlukImage.src}
-        href="https://www.acisozluk.tk"
+        image={FlamingoImage.src}
+        href="https://flamingo.candar.dev"
         big
       />
       <ShowcaseCard {...style}
-        title="shortenxpress" 
+        title="qrbook" 
         text={
           <Fragment>
-            url-shortener application built using the MVC approach. used jade and express.<br/>
-            shorten links and share.
+            in qrbook you generate pages with qr codes attached to them. <br/>
+            these pages can contain any information that you want to share. <br />
+            built with svelte and firebase.
           </Fragment>
         } 
-        image={ShortenxpressImage.src}
-        href="https://shortenxpress.herokuapp.com/"
+        image={QrbookImage.src}
+        href="https://qr.candar.dev/"
         big
       />
     </PageContainer>

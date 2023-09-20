@@ -19,7 +19,7 @@ export default function ShowcaseCard({ title, text, sx, image, big = false, href
       sx={[sx, href && {'&:hover': { opacity: 0.5}, 'transition': "0.2s"}]}
     >
       <Grid container>
-        <Grid item xs={12} sm={big ? 8 : 12} md={big ? 10 : 8}>
+        <Grid item xs={12} sm={big ? 8 : 12} md={big ? 9.5 : 8}>
           <Box sx={{ backgroundColor: 'background.default', height: "100%"}}>
             <CardContent>
               <Typography component="div" variant="h5">
@@ -31,7 +31,7 @@ export default function ShowcaseCard({ title, text, sx, image, big = false, href
             </CardContent>
           </Box>
         </Grid>
-        <Grid item xs={12} sm={big ? 4 : 12} md={big ? 2 : 4}>
+        <Grid item xs={12} sm={big ? 4 : 12} md={big ? 2.5 : 4}>
           <CardMedia
             component="img"
             image={image}

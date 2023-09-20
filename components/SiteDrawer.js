@@ -31,9 +31,9 @@ function SiteDrawerItem({ text, icon, to }) {
 
 export default function SiteDrawer({ open, onClose }) {
   const routes = [
-    ["hakan.software", HomeIcon, "/"],
+    ["hakan.candar.dev", HomeIcon, "/"],
     ["my projects", ConstructionIcon, "/projects"],
-    ["my blog", BookIcon, "/blog"],
+    ["my blog", BookIcon, "https://blog.hakan.candar.dev"],
   ];
 
   const list = (

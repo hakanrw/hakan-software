@@ -11,6 +11,7 @@ import Link from 'next/link';
 import ShowcaseCard from '../components/ShowcaseCard';
 import HakanCandarImage from "../assets/hakan.jpg";
 import EnkaSchoolsImage from "../assets/enka-okullari.jpeg";
+import YeditepeImage from "../assets/yeditepe.jpeg";
 import SkillsImage from "../assets/skills.jpeg";
 import StackImage from "../assets/stack.jpeg";
 import { Fragment } from 'react';
@@ -38,7 +39,7 @@ export default function Home() {
   ];
 
   return (
-    <Container>
+    <Container sx={{mb: 3}}>
       <Head>
         <title>hakan.candar.dev</title>
         <meta name="description" content="hi! i am hakan." />
@@ -76,6 +77,30 @@ export default function Home() {
           <Item>
             <Typography variant="h5" sx={{mb: 2}}>about me</Typography>
             <ShowcaseCard 
+              title="my skills and projects"
+              text={
+                <Fragment>
+                  i have been learning web development along with programming for more than four years. 
+                  i have built many personal projects through this process which you can check {" "}
+                  <Link href="projects"><Typography sx={{display: "inline", cursor: "pointer", fontWeight: 600}}>here</Typography></Link>.
+                </Fragment>
+              }
+              sx={{ mb: 2 }}
+              image={SkillsImage.src}
+            />
+            <ShowcaseCard 
+              title="where i'm studying"
+              text={
+                <Fragment>
+                  i am currently studying at yeditepe university as a computer science student.
+                  i was able to combine my previous programming experience with those i learnt in university.
+                  i love my classes.
+                </Fragment>
+              }
+              sx={{ mb: 2 }}
+              image={YeditepeImage.src}
+            />
+            <ShowcaseCard 
               title="where i graduated"
               text={
                 <Fragment>
@@ -87,22 +112,10 @@ export default function Home() {
               image={EnkaSchoolsImage.src}
             />
             <ShowcaseCard 
-              title="my skills"
-              text={
-                <Fragment>
-                  i have been learning web development along with programming for more than three years. 
-                  i have built many personal projects through this process which you can check {" "}
-                  <Link href="projects"><Typography sx={{display: "inline", cursor: "pointer", fontWeight: 600}}>here</Typography></Link>.
-                </Fragment>
-              }
-              sx={{ mb: 2 }}
-              image={SkillsImage.src}
-            />
-            <ShowcaseCard 
               title="development stack"
               text={
                 <Fragment>
-                  i have experience in nextjs, react, express, postgres, mongodb and more. 
+                  i have experience in svelte, nextjs, react, express, postgres, mongodb and more. 
                   tell me about what you use in your company! i am interested. 
                 </Fragment>
               }

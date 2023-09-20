@@ -4,7 +4,7 @@ import Paper from '@mui/material/Paper';
 
 export default function PageContainer({ title, children }) {
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="md" sx={{mb: 3}}>
       <Paper sx={{p: 2, mb: 2}}>
         <Typography variant="h4">{title}</Typography>
       </Paper>
