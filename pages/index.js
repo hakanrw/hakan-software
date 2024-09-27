@@ -35,13 +35,13 @@ export default function Home() {
   const social = [
     ["github", "https://github.com/hakanrw", GitHubIcon],
     ["linkedin", "https://www.linkedin.com/in/hakan-candar/", LinkedInIcon],
-    ["e-mail", "mailto:hakancandar@protonmail.com", MailIcon],
+    ["e-mail", "mailto:contact@candar.tr", MailIcon],
   ];
 
   return (
     <Container sx={{mb: 3}}>
       <Head>
-        <title>hakan.candar.dev</title>
+        <title>hakan.candar.tr</title>
         <meta name="description" content="hi! i am hakan." />
         <meta property="og:image" content="/logo512.png"/>
       </Head>

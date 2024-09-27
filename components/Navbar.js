@@ -23,7 +23,7 @@ export default function Navbar({ onOpen }) {
           </IconButton>
           <Link href="/">
             <Typography variant="h6" component="div" sx={{ cursor: "pointer" }}>
-              hakan.candar.dev
+              hakan.candar.tr
             </Typography>
           </Link>
         </Toolbar>
